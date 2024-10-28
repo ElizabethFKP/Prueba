@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mercado Libre</title>
+</head>
+<body>
+    <header>
+        <h1>Karen Page</h1>
+        <input type="text" id="search" placeholder="Buscar productos..." onkeyup="searchProducts()">
+        <div id="cart-count">Carrito: 0 artículo(s)</div>
+        <button id="cart-button">Ver Carrito</button>
+    </header>
+    
+    <div id="cart-container" style="display: none;">
+        <h2>Contenido del Carrito</h2>
+        <div id="cart-list"></div>
+        <button onclick="toggleCart()">Cerrar Carrito</button>
+        <button onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+
+    <main>
+        <div id="product-list" class="product-list"></div>
+    </main>
+    
+    <div id="notification"></div>
+    
+    <footer>
+        <p>&trade; 2024 Karen Web Test</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
